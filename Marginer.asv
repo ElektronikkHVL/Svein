@@ -1,0 +1,18 @@
+num = 9 * 10 * [1 10];
+
+den = conv(conv([1 1], [1 3]), [1 30]);
+
+G1 = tf(num,den)
+
+G2 = tf(num,den,'InputDelay',0.001)
+
+f
+
+bode(G1)
+
+grid on
+
+hold on
+
+bode(G2)
+
